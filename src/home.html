@@ -3,12 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link href="./output.css" rel="stylesheet">
   <title>Space</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold mt-4 pl-6 text-orange-500">
-    Hello world!
-  </h1>
+<body class="bg-black md:bg-[url(../img/background-home-tablet.jpg)] lg:bg-[url(../img/background-home-desktop.jpg)] bg-[url(../img/background-home-mobile.jpg)] bg-no-repeat bg-cover font-sans">
+  <div class="flex justify-between p-5">
+    <div>
+      <img src="../img/logo.svg" alt="logo">
+    </div>
+    <svg class="lg:hidden inline w-12 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bars"><path fill="#FFFFFF" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path></svg>
+    <nav class="hidden lg:inline w-[40%]">
+      <ul class="flex justify-evenly text-white font-bold text-lg shadow-white shadow-lg border-white border-[1px]">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">DISTINATION</a></li>
+        <li><a href="#">CREW</a></li>
+        <li><a href="#">TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="flex justify-evenly items-center w-full flex-wrap mt-20 text-white text-center">
+    <div class="sm:w-[50%] lg:w-[30%] w-[300px] mb-10 sm:mb-0">
+      <p class="text-[17px] sm:text-[22px]">SO , YOU WANT TO TRAVEL TO</p>
+      <p class="text-[86px] sm:text-[120px] p-0 m-0 ">SPACE</p>
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores praesentium id esse dolore veniam libero velit. Similique, sint, voluptate quaerat distinctio aliquid obcaecati nulla iste ipsam perferendis eum veniam?
+      </p>
+    </div>
+    <a href="#">
+      <div class="bg-white w-[180px] rounded-full h-[180px] flex justify-center items-center mb-5 sm:mb-0">
+        <P class="text-black font-[400] text-2xl">EXPLORE</P>
+      </div>
+    </a>
+  </div>
 </body>
 </html>
