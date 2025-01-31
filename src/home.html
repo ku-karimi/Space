@@ -12,26 +12,26 @@
     <div>
       <img src="../img/logo.svg" alt="logo">
     </div>
-    <nav class="hidden lg:inline w-[40%]">
-      <ul class="flex justify-evenly text-white font-bold text-lg shadow-white shadow-lg border-white border-[1px]">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DISTINATION</a></li>
-        <li><a href="#">CREW</a></li>
-        <li><a href="#">TECHNOLOGY</a></li>
+    <nav class="hidden lg:inline w-[50%] h-14 rounded-md" style="background: rgba(130, 130, 130, 0.269);background: radial-gradient(circle, rgba(130, 130, 130, 0.589) 17%, rgba(52,52,52,1) 85%);">
+      <ul class="flex justify-evenly text-white text-lg mt-3">
+        <li><a href="home.html" class="border-b-2">00 HOME</a></li>
+        <li><a href="distination.html">01 DISTINATION</a></li>
+        <li><a href="crew.html">02 CREW</a></li>
+        <li><a href="technology.html">03 TECHNOLOGY</a></li>
       </ul>
     </nav>
     <svg class="lg:hidden block w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bars"><path fill="#FFFFFF" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path></svg>
   </div>
-  <div style="display: none;" id="menuBar" class="mt-[-50px] w-[200px] float-right">
+  <div style="display: none;" id="menuBar" class="mt-[-50px] w-[220px] float-right">
     <ul class="text-white font-bold text-xl shadow-blue-900 p-5 shadow-md">
-      <li class="p-2"><a href="#">HOME</a></li>
-      <li class="p-2"><a href="#">DISTINATION</a></li>
-      <li class="p-2"><a href="#">CREW</a></li>
-      <li class="p-2"><a href="#">TECHNOLOGY</a></li>
+      <li class="mb-3"><a href="home.html" class="border-b-2">HOME</a></li>
+      <li class="mb-3"><a href="distination.html">DISTINATION</a></li>
+      <li class="mb-3"><a href="crew.html">CREW</a></li>
+      <li class="mb-3"><a href="technology.html">TECHNOLOGY</a></li>
     </ul>
   </div>
-  <div style="margin-top:180px;" id="text" class="flex justify-evenly items-center w-full flex-wrap lg:mt-28 text-white text-center ">
-    <div class="sm:w-[50%] lg:w-[30%] w-[300px] mb-10 sm:mb-0">
+  <div id="text" class="flex justify-evenly items-center w-full flex-wrap lg:mt-24 mt-[180px] text-white text-center ">
+    <div class="sm:w-[50%] lg:w-[30%] w-[300px] mb-10 sm:mb-0 ">
       <p class="text-[17px] sm:text-[22px]">SO , YOU WANT TO TRAVEL TO</p>
       <p class="text-[86px] sm:text-[120px] p-0 m-0 ">SPACE</p>
       <p class="text-justify">
@@ -44,21 +44,7 @@
       </div>
     </a>
   </div>
-  <script>
-    const bars = document.getElementById("bars");
-    const menuBar = document.getElementById("menuBar");
-    const text = document.getElementById("text");
-
-    function menuFunc() {
-      
-      if(menuBar.style.display == "none" || menuBar.style.display === ""){
-        menuBar.style.display = "block";
-      }else{
-        menuBar.style.display = "none" ;
-        text.style.marginTop = "180px";
-      }
-    }
-    bars.addEventListener("click" , menuFunc)
-  </script>
+  <script src="./js/main.js"></script>
+  
 </body>
 </html>
