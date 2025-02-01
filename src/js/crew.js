@@ -12,7 +12,7 @@ const sientist = [
 const discriptTag = document.getElementById("discriptTag");
 const nameTag = document.getElementById("nameTag");
 const img = document.getElementById("img");
-const listsientist = document.getElementsByClassName("scrollBar");
+let listsientist = document.getElementsByClassName("scrollBar");
 
 function changeFunc() {
     const Person = sientist[currentIndex];
@@ -21,7 +21,10 @@ function changeFunc() {
     img.src = Person.imgSrc;
     discriptTag.innerHTML = Person.Discription;
 
-    // listsientist[currentIndex].style.background = "snow" ;
-
+    listsientist[currentIndex].style.backgroundColor = "snow" ;
+    (currentIndex != 0) 
+        ? listsientist[currentIndex - 1].style.backgroundColor = "#fffafa57" 
+        : listsientist[listsientist.length - 1].style.backgroundColor = "#fffafa57" ;
+    
     currentIndex = (currentIndex + 1) % sientist.length; 
 }
