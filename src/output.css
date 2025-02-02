@@ -722,11 +722,23 @@
   .mt-\[180px\] {
     margin-top: 180px;
   }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
+  .mr-10 {
+    margin-right: calc(var(--spacing) * 10);
+  }
+  .mr-14 {
+    margin-right: calc(var(--spacing) * 14);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -1386,6 +1398,12 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1520,17 +1538,11 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[\#fffafa57\] {
     background-color: #fffafa57;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
-  }
-  .bg-\[snow\] {
-    background-color: snow;
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
@@ -1570,6 +1582,9 @@
   }
   .bg-\[url\(\.\.\/img\/background-home-mobile\.jpg\)\] {
     background-image: url(../img/background-home-mobile.jpg);
+  }
+  .bg-\[url\(\.\.\/img\/background-technology-mobile\.jpg\)\] {
+    background-image: url(../img/background-technology-mobile.jpg);
   }
   .bg-none {
     background-image: none;
@@ -1731,8 +1746,29 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
+  .pr-3 {
+    padding-right: calc(var(--spacing) * 3);
+  }
+  .pr-4 {
+    padding-right: calc(var(--spacing) * 4);
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
@@ -2360,9 +2396,29 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:mr-0 {
+    @media (width >= 40rem) {
+      margin-right: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:mb-0 {
     @media (width >= 40rem) {
       margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:mb-3 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
     }
   }
   .sm\:w-\[50\%\] {
@@ -2373,6 +2429,26 @@
   .sm\:w-\[70\%\] {
     @media (width >= 40rem) {
       width: 70%;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:flex-nowrap {
+    @media (width >= 40rem) {
+      flex-wrap: nowrap;
+    }
+  }
+  .sm\:p-10 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:text-\[45px\] {
+    @media (width >= 40rem) {
+      font-size: 45px;
     }
   }
   .sm\:text-\[100px\] {
@@ -2390,14 +2466,14 @@
       font-size: 22px;
     }
   }
-  .sm\:text-\[45px\] {
-    @media (width >= 40rem) {
-      font-size: 45px;
-    }
-  }
   .sm\:text-\[120px\] {
     @media (width >= 40rem) {
       font-size: 120px;
+    }
+  }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
     }
   }
   .md\:block {
@@ -2415,14 +2491,29 @@
       height: 180px;
     }
   }
+  .md\:h-\[400px\] {
+    @media (width >= 48rem) {
+      height: 400px;
+    }
+  }
   .md\:h-\[430px\] {
     @media (width >= 48rem) {
       height: 430px;
     }
   }
+  .md\:w-\[0\%\] {
+    @media (width >= 48rem) {
+      width: 0%;
+    }
+  }
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
     }
   }
   .md\:w-\[180px\] {
@@ -2433,6 +2524,11 @@
   .md\:w-\[350px\] {
     @media (width >= 48rem) {
       width: 350px;
+    }
+  }
+  .md\:w-\[400px\] {
+    @media (width >= 48rem) {
+      width: 400px;
     }
   }
   .md\:w-\[430px\] {
@@ -2453,6 +2549,11 @@
   .md\:bg-\[url\(\.\.\/img\/background-home-tablet\.jpg\)\] {
     @media (width >= 48rem) {
       background-image: url(../img/background-home-tablet.jpg);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/img\/background-technology-tablet\.jpg\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../img/background-technology-tablet.jpg);
     }
   }
   .lg\:mt-0 {
@@ -2495,9 +2596,29 @@
       display: inline;
     }
   }
+  .lg\:w-\[0\%\] {
+    @media (width >= 64rem) {
+      width: 0%;
+    }
+  }
   .lg\:w-\[30\%\] {
     @media (width >= 64rem) {
       width: 30%;
+    }
+  }
+  .lg\:w-\[45\%\] {
+    @media (width >= 64rem) {
+      width: 45%;
+    }
+  }
+  .lg\:w-\[50\%\] {
+    @media (width >= 64rem) {
+      width: 50%;
+    }
+  }
+  .lg\:w-\[450\%\] {
+    @media (width >= 64rem) {
+      width: 450%;
     }
   }
   .lg\:bg-\[url\(\.\.\/img\/background-crew-desktop\.jpg\)\] {
@@ -2513,6 +2634,11 @@
   .lg\:bg-\[url\(\.\.\/img\/background-home-desktop\.jpg\)\] {
     @media (width >= 64rem) {
       background-image: url(../img/background-home-desktop.jpg);
+    }
+  }
+  .lg\:bg-\[url\(\.\.\/img\/background-technology-desktop\.jpg\)\] {
+    @media (width >= 64rem) {
+      background-image: url(../img/background-technology-desktop.jpg);
     }
   }
 }
